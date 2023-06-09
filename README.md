@@ -22,7 +22,7 @@ Often as IT entry level students or graduates we tend to feel lost into which co
 1) minimalism
 2) efficiency
 
-- The web based chatbot is easily deployable and after setup, with a userfriendly and minimalistic design it navigates you to find that perfect course to garner to your required skill from the top institutions.
+- This web based chatbot is easily deployable after set-up, with a user-friendly and minimalistic design to navigate you to find that perfect course to garner to your required skill from the top institutions.
 
 >**Warning**: As of now, this is only bounded to the Coursera dataset.
 
