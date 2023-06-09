@@ -10,7 +10,7 @@
 4. [Usage](#usage)
 
 # Introduction
-This is an AI based Course recommedation chatbot that uses contant based algorithms on the coursera course dataset.
+This is an AI based Course recommedation chatbot that uses `contant based algorithms` on the coursera course dataset.
 
 # Real World Problem
 Often as IT entry level students or graduates we tend to feel lost into which course we need to invest our time into. With every domain, there will be many programs based on that particular field, but how do I select the best one for me and my needs??
