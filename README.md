@@ -6,6 +6,8 @@
 # Table of Contents
 1. [Introduction](#introduction)
 2. [Real World Problem](#real-world-problem)
+3. [The Chatbot](#the-chatbot)
+4. [Usage](#usage)
 
 # Introduction
 This is an AI based Course recommedation chatbot that uses contant based algorithms on the coursera course dataset.
