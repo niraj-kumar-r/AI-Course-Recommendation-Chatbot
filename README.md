@@ -26,10 +26,18 @@ Often as IT entry level students or graduates we tend to feel lost into which co
 
 >**Warning**: As of now, this is only bounded to the Coursera dataset.
 
-# Usage
-> **Warning** Tested and deployed using Python 3.8.10.
-> Also additional installation guides will be documented very soon. Stay tuned!!
-
 # The filesystem
 1) `skilllist.txt` - the list that contains the set of skills. 
 > **Note** Make sure when you are typing the skills in the chatbot application, do capitalise every first letter or refer to this `.txt` file. Also multiple skillsets can be typed using `,` without spaces.
+
+
+# Usage
+> **Warning** Tested and deployed using Python 3.8.10.
+> Also additional installation guides will be documented very soon. Stay tuned!!
+- To run the application, initialise `virtualenv` and run
+```bash
+python3 index.html
+```
+this launches the flask webapp in your `localhost:5000`.
+- To view your application, just type `localhost:5000` in your search bar.
+> **Note** Make sure the `index.py` is running to access the webapp, otherwise the url will be **unreachable**.
