@@ -28,3 +28,8 @@ Often as IT entry level students or graduates we tend to feel lost into which co
 
 # Usage
 > **Warning** Tested and deployed using Python 3.8.10.
+> Also additional installation guides will be documented very soon. Stay tuned!!
+
+# The filesystem
+1) skilllist.txt - the list that contains the set of skills. 
+> **Note** Make sure when you are typing the skills in the chatbot application, do capitalise every first letter or refer to this `.txt` file. Also multiple skillsets can be typed using `,` without spaces.
