@@ -40,4 +40,4 @@ python3 index.html
 ```
 this launches the flask webapp in your `localhost:5000`.
 - To view your application, type `localhost:5000` in your search bar.
-> **Note** Make sure the `index.py` is running to access the webapp, otherwise the url will be **unreachable**.
+> **Note** Make sure the `index.py` is actively running in the background to access the webapp, else the url will be **unreachable**.
