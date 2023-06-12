@@ -18,7 +18,7 @@ Often as IT entry level students or graduates we tend to feel lost into which co
 **This is your answer!!**
 
 # The Chatbot
-- Developed by a team of 4 btech graduates, we priortised 2 factors: 
+- We priortised 2 factors: 
 1) minimalism
 2) efficiency
 
