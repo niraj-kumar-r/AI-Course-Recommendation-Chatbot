@@ -36,7 +36,9 @@ Often as IT entry level students or graduates we tend to feel lost into which co
 > Also additional installation guides will be documented very soon. Stay tuned!!
 - To run the application, initialise `virtualenv` and run
 ```bash
-python3 index.html
+$env:FLASK_App='index.py'
+$env:FLASK_ENV='development'
+flask run
 ```
 this launches the flask webapp in your `localhost:5000`.
 - To view your application, type `localhost:5000` in your search bar.
