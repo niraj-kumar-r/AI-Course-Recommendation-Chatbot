@@ -39,5 +39,5 @@ Often as IT entry level students or graduates we tend to feel lost into which co
 python3 index.html
 ```
 this launches the flask webapp in your `localhost:5000`.
-- To view your application, just type `localhost:5000` in your search bar.
+- To view your application, type `localhost:5000` in your search bar.
 > **Note** Make sure the `index.py` is running to access the webapp, otherwise the url will be **unreachable**.
