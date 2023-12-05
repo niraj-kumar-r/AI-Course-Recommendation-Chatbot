@@ -10,5 +10,7 @@ source "$venv_path/bin/activate"
 export FLASK_APP='index.py'
 export FLASK_ENV='development'
 
+python download_nltk.py
+
 # Start Flask application
 flask run

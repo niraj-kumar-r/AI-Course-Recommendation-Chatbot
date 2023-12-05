@@ -1,11 +1,15 @@
 import pandas as pd
 import numpy as np
 from rake_nltk import Rake
+import nltk
 import os
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
 import altair as alt
 import pandas as pd
+
+nltk_data_path = os.path.join(os.path.dirname(__file__), 'nltk_data')
+nltk.data.path.append(nltk_data_path)
 
 def clean_col_names(df, columns):
 	new = []
