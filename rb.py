@@ -1,5 +1,6 @@
 # Import necessary libraries
 import pandas as pd
+import os
 import re
 import warnings
 
@@ -8,7 +9,8 @@ warnings.filterwarnings("ignore", category=UserWarning)
 
 
 # Load course data
-courses_df = pd.read_csv('F:\\test bot\data\coursera-courses.csv')
+data_path = os.path.join("data/coursera-courses.csv")
+courses_df = pd.read_csv(data_path)
 
 
 # define a regular expression to find numbers in the text
