@@ -83,7 +83,7 @@ def load_data():
 	# df_individual = pd.read_csv(source_path2)
 
     # Get the collection
-    collection_overview = db["projects"]
+    collection_overview = db["overviews"]
     collection_individual = db["individuals"]
 
     # Fetch all records from the collections
