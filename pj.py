@@ -7,9 +7,16 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
 import altair as alt
 import pandas as pd
+from pymongo import MongoClient
+from dotenv import load_dotenv
+load_dotenv()
 
 nltk_data_path = os.path.join(os.path.dirname(__file__), 'nltk_data')
 nltk.data.path.append(nltk_data_path)
+
+mongo_url = os.getenv('MONGO_URL')
+client = MongoClient(mongo_url)
+db = client['INTER-IIT-TRUMIO']
 
 def clean_col_names(df, columns):
 	new = []
@@ -70,15 +77,24 @@ def prepare_data(df):
 
 
 def load_data():
-	source_path1 = os.path.join("data/coursera-courses-overview.csv") 
-	source_path2 = os.path.join("data/coursera-individual-courses.csv")
-	df_overview = pd.read_csv(source_path1)
-	df_individual = pd.read_csv(source_path2)
-	df = pd.concat([df_overview, df_individual], axis=1)
-	# preprocess it now
-	df = prepare_data(df)
+	# source_path1 = os.path.join("data/coursera-courses-overview.csv") 
+	# source_path2 = os.path.join("data/coursera-individual-courses.csv")
+	# df_overview = pd.read_csv(source_path1)
+	# df_individual = pd.read_csv(source_path2)
 
-	return df
+    # Get the collection
+    collection_overview = db["projects"]
+    collection_individual = db["individuals"]
+
+    # Fetch all records from the collections
+    df_overview = pd.DataFrame(list(collection_overview.find()))
+    df_individual = pd.DataFrame(list(collection_individual.find()))
+    
+    df = pd.concat([df_overview, df_individual], axis=1)
+	# preprocess it now
+    df = prepare_data(df)
+    
+    return df
 
 def filter(dataframe, chosen_options, feature, id):
 	selected_records = []
